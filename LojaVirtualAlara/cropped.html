@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- título da página -->
+<title>Alara Closet</title>
+
+	<!-- aplicando um ícone no cabeçalho -->
+	<link rel = "icon"href="imagens/logo.jpg"/>
+	
+ <!-- importando o link do css do framework do bootStrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!--aplicando css na pagina-->
+<style >
+	body {
+	/*alterando a distancia externa dos elementos para 0 pixels*/
+	margin: 0px;
+	/*alterando a distancia do elemento entre a borda para 0 pixels*/
+	padding: 0px;
+	/*definindo uma fonte*/
+	font: 90% times new roman, hevetica, sans-serif;
+	/*alinhando texto no centro*/
+	text-align: center;
+	/*adicionando cor de fundo da pagina*/
+	background: white;
+	}
+
+/*Estilizando a nav*/
+#nav{
+	background-color:#efe1de;
+
+}
+
+/*Estilizando o link da nav*/
+.nav-link {
+	color:#965950;
+}
+
+/*adicionando cor de fundo do link ao passar o mouse sobre ele*/
+a:hover {
+	background-color: #c48e7f;
+}
+
+
+/*Estilizando os conjuntos de cards*/
+.primeroscards{
+	
+	display: flex;
+	height: 200%;
+	align-items: center;
+	justify-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap ;
+	background: white;
+}
+/*Estilizando os cards*/
+.cards1{
+	background: #ffffff;
+	width: 20%;
+	border-radius: 19px;
+	margin: 1%;
+	border: 3px solid white;
+}
+/*Estilizando o conteudo dos cards*/
+.conteudocard{
+	border: 3px solid white;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #efe1de;
+	color:black;
+	margin: 3%;
+}
+
+/*Estilizando as imagens dos cards*/
+#imagemcard1{
+	height: 300px;
+  margin-top: 9%;
+}
+
+/*Estilizando o carossel*/
+.carrossel-cards{
+	height: 600px;
+	width: 2500px;
+	
+}
+/*Estilizando as imagem de dentro do carossel*/
+#imagemcard-Slide{
+	width: 400px;
+	height: 600px;
+}
+
+/*Ajustando o conjunto de carossel*/
+.conjunto-carossel{
+	display: flex;
+    justify-content: center;
+}
+
+/*Estilizando a logo*/
+.logo{
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+	margin-top: 2px;
+}
+
+/*estilizando a div class msginfo*/
+.msginfo {
+	font-size: 16px;
+	background-color: #965950;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+}
+
+/*estilizando o rodape*/
+footer {
+	background-color: #965950;
+	color: #efe1de;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/*estilizando a lista e link do rodape*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+a {
+	color: #efe1de;
+	text-decoration: none;
+}
+
+ </style>
+</head>
+<body>
+	<!-- Colocando uma div para a logo do site-->
+
+	 <div class="logo">
+		<img src="imagens/logo.jpg" style="height: 200px;">
+	 </div>
+
+	
+	<!-- criando uma barra de navegacao para inserir itens do menu-->
+	<nav class="navbar navbar-expand-lg " id="nav">
+		<div class="container-fluid">
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="conjuntos.html">Conjuntos</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="cropped.html">Croppeds</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="saia&short.html">Saias e Shorts</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="vestidos.html">Vestidos</a>
+			  </li>
+			</ul>
+			<!--inserindo icone de usuario e whatsapp com link de encaminhamento para página-->
+			<a href="teladelogin.html"><img src="imagens/iconuser.jpg" width="50px"></a>
+			<a href="https://wa.me/5584991890223?text=Olá, tenho interesse nos produtos de sua loja!"><img src="imagens/logowttp.jpg" width="70px"></a>
+
+		  </div>
+		</div>
+	  </nav>
+
+	  <!--criando divs para colocar o carrossel de imagens-->
+
+	   <div class="conjunto-carossel">
+	  <div class="carrossel-cards">
+	  <div id="carouselExampleCaptions" id="carouselExampleInterval"  class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+
+	<!--botoes para passar imagens do carrossel-->
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		</div>
+		<div class="carousel-inner" data-bs-interval="10000">
+		  <div class="carousel-item active">
+		<!--inserindo links das paginas na imagem do carrossel-->
+			<a href="cropped.html"><img src="imagens/banner (4).jpg" id="imagemcard-Slide"class="d-block w-100" alt="..."></a>
+		  </div>
+		  <div class="carousel-item">
+			<a href="index.html"><img src="imagens/banner.jpg" id="imagemcard-Slide" class="d-block w-100" alt="..."></a>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+	  </div> 
+	   </div>
+
+<!--div para informar uma mensagem no meio da pagina-->
+	   <div class="msginfo">
+		<p>Confira nossos croppeds femininos.</p>
+	  </div>
+
+	  <!-- Os card com 4 Sub-cards com imagem e conteúdos -->
+	  
+	   <div class="primeroscards">
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp6.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$45,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp8.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$40,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp10.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$60,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp12.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$55,00</P>
+		</div>
+	  </div>
+<!-- Os card com 4 Sub-cards com imagem e conteúdos -->
+
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp14.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$50,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp56.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$40,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp64.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$55,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp65.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$60,00</P>
+		</div>
+	  </div>
+<!-- Os card com 4 Sub-cards com imagem e conteúdos -->
+
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp66.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$65,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp67.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$50,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp68.jpg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$65,00</P>
+		</div>
+	  </div>
+	  <div class="cards1">
+		<div class="cardimagem"><a href="#"> <img src="imagens/rp17.jpeg" id="imagemcard1"></a></div>
+		<div class="conteudocard"><P>Cropped Feminino<br>   
+			por apenas R$50,00</P>
+		</div>
+	  </div>
+	  
+	   </div>
+	   </div>
+
+	<!--criando rodape com lista para organizar-->
+
+	  <footer>
+		<p>&copy; 2023 - Todos os direitos reservados</p>
+		<p>Entre em contato pelo e-mail: alannafdfonseca@.com</p>
+		<nav>
+			<ul>
+				<li><a href="#">Termos de uso</a></li>
+				<li><a href="#">Política de privacidade</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+ <!-- importando o link do script do framework do bootStrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+
+</body>
+</html>
